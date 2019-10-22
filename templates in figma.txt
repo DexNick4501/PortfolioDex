@@ -1,0 +1,8 @@
+1) Ещё один слайдер 
+	https://www.figma.com/file/4r893ABSxVC5pT8R9PFwax/Untitled
+2) Шаблон сайта(для тренировки вёрстки)
+	https://www.figma.com/file/infIPPpEKPS9doZDFycSei/Layout-task
+3) Слайдер и плеер
+	https://www.figma.com/file/AU6ZXYCvikhwdq1JOYpNkj/many-pages?node-id=2%3A33
+4) Калькулятор доходов
+	https://www.figma.com/file/z0LOSGZ6IHwftNBFFyIK6e/Calc-of-income?node-id=0%3A1

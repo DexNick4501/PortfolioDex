@@ -1,0 +1,15 @@
+установить пакет
+   |npm install название_пакета
+
+удалить пакет
+   |npm install название_пакета
+
+создать package.json
+   |npm init
+
+установить пакет с записью в package.json
+   |npm install название_пакета -save
+
+скачать все пакеты из package.json
+   |npm install
+

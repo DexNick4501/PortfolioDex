@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <title>Chat programm</title>
+  <style media="screen">
+    body {
+      background: $f4f4f4;
+      color: #545454;
+    }
+
+    .message-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #all_mess {
+      width: 900px;
+      height: 300px;
+      border-radius: 10px;
+      border: 1px solid #545454;
+      text-align:left;
+      margin: 20px;
+      padding: 20px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal">DexTest</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark" href="#">Главная</a>
+      <a class="p-2 text-dark" href="#">Про нас</a>
+      <a class="p-2 text-dark" href="#">Поддержка</a>
+      <a class="p-2 text-dark" href="#">Цены</a>
+    </nav>
+    <a class="btn btn-outline-primary" href="#">Регистрация</a>
+  </div>
+  <div class="container">
+    <div class="py-5 text-center">
+      <h2>Chat programm</h2>
+      <p class="lead">Укажите ваше имя и начинайте переписку</p>
+    </div>
+
+    <div class="py-5 text-center message-container">
+      <h3>Сообщения</h3>
+      <div id="all_mess"></div>
+    </div>
+
+    <div class="py-5 text-center">
+      <h3>Форма сообщений</h3>
+      <form id="messForm">
+        <label for="name">Имя</label>
+        <input type="text" name="name" id="name"placeholder="Введите имя" class="form-control">
+
+        <label for="message"> Сообщение</label>
+        <textarea name="message" id="message" class='form-control' placeholder="Введите сообщение"></textarea>
+        <br>
+        <input type="submit" value="Отправить" class="btn btn-danger">
+      </form>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    $(function() {
+      var min = 1;
+      var max = 6;
+      var randNumb = Math.floor(Math.random() * (max-min) + min);
+      var listItems = ['primary','secondary','success','warning','danger','info'];
+      var personalColor = listItems[randNumb - 1];
+
+      var socket = io.connect();
+      var $form = $("#messForm");
+      var $name = $("#name");
+      var $textarea = $("#message");
+      var $all_messages = $("#all_mess");
+
+      $form.submit(function(event) {
+        event.preventDefault();
+        socket.emit('send mess', {name:$name.val() ,msg:$textarea.val(), perCol:personalColor});
+        $textarea.val('');
+      });
+
+      socket.on('add mess', function(data) {
+        $all_messages.append("<div class='alert alert-" + data.perCol + "'><b>" + data.name + ":</b> " + data.msg +"</div>");
+      });
+
+    });
+  </script>
+</body>
+</html>

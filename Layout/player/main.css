@@ -1,0 +1,142 @@
+body {
+    height: 100vh;
+    background: #474747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.player {
+    width: 350px;
+    height: 650px;
+    padding: 30px;
+    background: #C4C4C4;
+    border: 1px solid #656565;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    font-family: "Century Gothic", sans-serif;
+    color: #424242;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.player-title {
+    width: 220px;
+    height: 50px;
+    background: #474747;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px 25px 10px 10px;
+    color: #C4C4C4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.singer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #7DB6F9;
+}
+
+.player-image {
+    width: 290px;
+    height: 290px;
+    background: linear-gradient(180deg, rgba(125, 182, 249, 0) 64.06%, #7DB6F9 100%), url('basta.jpg');
+    background-size: cover;
+    border: 1px solid #656565;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.player-scroller {
+    width: 290px;
+    height: 5px;
+    background: #9C9C9C;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+}
+
+.filled-song {
+    width: 46px;
+    height: 5px;
+    background: #474747;
+    border-radius: 5px;
+}
+
+.scrolled-dot {
+    width: 15px;
+    height: 15px;
+    background: #656565;
+    border-radius: 15px;
+    margin-left: -7.5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+}
+
+.player-buttons {
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prev-b, .next-b {
+    width: 85px;
+    height: 30px;
+    border: 1px solid #656565;
+    border-radius: 15px;
+}
+
+.play-b, .next-b, .prev-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-b {
+    width: 75px;
+    height: 75px;
+    background: #7DB6F9;
+    border: 1px solid #656565;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 75px;
+    font-weight: bold;
+}
+
+.buttons-manage {
+    width: 290px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-manage > * {
+    width: 125px;
+    height: 40px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-into {
+    background: #C4C4C4;
+    border: 1px solid #656565;
+}
+.download-into {
+    background: #E36060;
+    border: 1px solid #984242;
+    color: #E8E8E8;
+}

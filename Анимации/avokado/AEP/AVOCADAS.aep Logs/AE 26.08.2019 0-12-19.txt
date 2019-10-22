@@ -1,0 +1,12 @@
+Adobe After Effects v14.1 Windows 64 render log for project “AVOCADAS.aep”
+
+Rendering started on 26.08.2019 at 0:12:19
+
+  26.08.2019 0:12:19: Starting composition “main comp”.
+
+  Output To: C:\Users\idesi\Desktop\?????\arts\avokado\AEP\main comp\main comp_[#####].psd    26.08.2019 0:12:32: Finished composition “main comp”.
+
+
+  Total Time Elapsed: 13 Seconds
+Log closed on 26.08.2019 at 0:12:32
+
