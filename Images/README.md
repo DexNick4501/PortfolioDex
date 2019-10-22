@@ -1,18 +1,37 @@
-Первый абзац
-***
-Второй абзац
-или
 
-Первый абзац
+Анимации:
 ---
-Второй абзац
-Далее - заголовки и прочее:
+### Авакадо. Ae + Premiere Pro
+![Авакадо](https://github.com/DexNick4501/PortfolioDex/blob/master/Images/animate_avokados.PNG)
+[**Ссылка на ролик**](https://github.com/DexNick4501/PortfolioDex/blob/master/Анимации/avokado/AEP/main%20comp.mov)
 
-h1 заголовок первого уровня
-=====================
-h2 заголовок второго уровня
------------------------------------
-### h3 заголовок третьего уровня
-#### h4 заголовок четвёртого уровня
-##### h5 заголовок пятого уровня
-###### h6 заголовок шестого уровня
+Вёрстка:
+---
+
+### Плеер. Только вёрстка
+![Плеер](https://github.com/DexNick4501/PortfolioDex/blob/master/Images/player.PNG)
+[**Ссылка на код**](https://github.com/DexNick4501/PortfolioDex/tree/master/Layout/player)
+
+### Cлайдер. Только вёрстка.
+![Слайдер вёрстка(тренеровка)](https://github.com/DexNick4501/PortfolioDex/blob/master/Images/slider(layout).PNG)
+[**Ссылка на код**](https://github.com/DexNick4501/PortfolioDex/tree/master/Layout/slider)
+
+### Готовый слайдер.
+![Готовый слайдер](https://github.com/DexNick4501/PortfolioDex/blob/master/Images/slider_worked.PNG)
+[**Ссылка на код**](https://github.com/DexNick4501/PortfolioDex/tree/master/Layout/slider_2)
+
+### Игра жизнь.
+![Игра жизнь](https://github.com/DexNick4501/PortfolioDex/blob/master/Images/Игра%20Жизнь.PNG)
+[**Ссылка на код**](https://github.com/DexNick4501/PortfolioDex/tree/master/Layout/game_life)
+
+NodeJS:
+---
+
+### Чат на Node.
+
+Подключение пользователей(сокеты)
+![Подключение пользователей(сокеты)](https://github.com/DexNick4501/PortfolioDex/blob/master/Images/chat%20on%20node%20CMD.PNG)
+
+Переписка пользователей
+![Переписка пользователей](https://github.com/DexNick4501/PortfolioDex/blob/master/Images/chat%20on%20node.PNG)
+[**Ссылка на код**](https://github.com/DexNick4501/PortfolioDex/tree/master/Nodejs/www)
